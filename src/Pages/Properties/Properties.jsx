@@ -204,7 +204,6 @@ const Properties = () => {
                                 onClick={handleLoadMore}
                                 className="hover:bg-white bg-[#134391] font-semibold text-white transition-all duration-300 hover:text-[#134391] hover:border-[#134391] py-3 px-4 border border-transparent rounded"
                             >
-                                
                                 Load More
                             </button>
                         </div>
