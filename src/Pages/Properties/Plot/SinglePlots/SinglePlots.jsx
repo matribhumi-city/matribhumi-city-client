@@ -40,7 +40,6 @@ const SinglePlots = () => {
 
 			if (response.ok) {
 				reset();
-				console.log(resData);
 				const notify = () =>
 					toast.success('Successfully Submitted', {
 						position: 'top-center',
@@ -287,9 +286,9 @@ const SinglePlots = () => {
 					</div>
 					<div className='w-6/12 lg:block hidden'>
 						<div className='flex flex-col gap-5'>
-							{plots?.filter((item) => item?._id !== id)?.slice(0, 3)?.map((item) => (
+							{plots?.filter((item) => item?._id !== id)?.slice(0, 3)?.map((item, index) => (
 								<Link
-									key={item?._id}
+									key={index}
 									to={`/plot/${item?._id}`}
 									className='flex xl:flex-row bg-white border border-gray-200 rounded-md xl:h-[230px] shadow md:flex-row flex-col md:max-w-full hover:bg-gray-100'
 								>

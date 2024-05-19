@@ -11,7 +11,6 @@ const Career = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     const onSubmit = (data) => {
-        console.log(data)
         fetch(`${apiUrl}/career`, {
             method: 'POST',
             headers: {
@@ -22,7 +21,6 @@ const Career = () => {
         })
             .then((res) => res.json())
             .then((data) => {
-                console.log(data)
                 if (data.success) {
                     notify();
                     reset();

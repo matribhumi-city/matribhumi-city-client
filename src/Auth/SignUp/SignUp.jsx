@@ -23,7 +23,6 @@ const SignUp = () => {
 		formState: { errors },
 	} = useForm();
 	const onSubmit = (data) => {
-		console.log(data);
 
 		// password confirm validation
 		if (data.password !== data.confirmPassword)
@@ -59,8 +58,8 @@ const SignUp = () => {
 						<option value="" disabled>
 							Select Role
 						</option>
-						{roles.map((role) => (
-							<option key={role.toLowerCase()} value={role.toLowerCase()}>
+						{roles.map((role, index) => (
+							<option key={index} value={role.toLowerCase()}>
 								{role}
 							</option>
 						))}

@@ -38,7 +38,7 @@ const plans = [
 ]
 
 // Small Features data
-const features = featureData
+const features = featureData;
 
 // Concerns data
 const concernsData = [
@@ -167,7 +167,7 @@ const Home = () => {
                             </video>
                         </div>
                         <div data-aos="fade" data-aos-duration="1000" className='w-full'>
-                            <h1 className='text-4xl font-bold text-[#134391]'>About Us</h1>
+                            <h2 className='text-4xl font-bold text-[#134391]'>About Us</h2>
                             <hr className='my-3' />
                             <p className='text-justify mb-10'>
                                 <strong>Matribhumi City</strong> is a trailblazing real estate company in Bangladesh, dedicated to transforming the landscape of urban living. <br /> <br />
@@ -186,7 +186,7 @@ const Home = () => {
                 <div className='container mx-auto flex lg:flex-row flex-col items-center gap-8'>
                     <div data-aos="fade" data-aos-duration="1000" className='w-full'>
                         {/* <Divider textAlign="left" style={{ fontSize: "2em", fontWeight: "bold", marginBottom: '10px', color: '#134391' }} className='animate__fadeInUp'>Our Story</Divider> */}
-                        <h1 className='text-4xl font-bold text-[#134391]'>Features & Amenities</h1>
+                        <h2 className='text-4xl font-bold text-[#134391]'>Features & Amenities</h2>
                         <hr className='my-3' />
                         <p className='text-justify mb-10'>
                             Experience elevated living at <strong>Matribhumi Smart City</strong>, strategically located near Nimtola on the Dhaka-Mawa 300-feet highway, just 20 minutes from Motijheel. Our commitment to excellence is reflected in meticulously planned features and amenities. <br /><br />
@@ -255,7 +255,7 @@ const Home = () => {
                         <div data-aos="fade" data-aos-duration="2000" className='flex lg:flex-row flex-col items-center gap-10 z-40 relative xl:mx-0 mx-5'>
                             <div
                                 className="w-full text-white">
-                                <h1 className=' text-4xl font-semibold'>Project Plan</h1>
+                                <h2 className=' text-4xl font-semibold'>Project Plan</h2>
                                 <hr className='my-5' />
                                 <div className='my-10'>
                                     {
@@ -307,7 +307,7 @@ const Home = () => {
                                         <AccordionDetails>
                                             <div className='flex flex-col gap-3 '>
                                                 {image.description.map((item, index) => (
-                                                    <li className='pl-3'>{item}</li>
+                                                    <li className='pl-3' key={index}>{item}</li>
                                                 ))}
                                             </div>
                                         </AccordionDetails>

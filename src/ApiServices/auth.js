@@ -35,6 +35,7 @@ const userRegister = (
 			const data = await res.json();
 			if (!res.ok) {
 				setError(data.message);
+				console.log(data.message);
 			}
 			if (res.ok) {
 				reset();
@@ -42,9 +43,9 @@ const userRegister = (
 				Swal.fire({
 					position: 'center',
 					icon: 'success',
-					title: 'Your account has been created',
+					title: 'Your account has been created. Check verify email',
 					showConfirmButton: false,
-					timer: 1500,
+					timer: 3000,
 				});
 			}
 		} catch (error) {

@@ -39,7 +39,7 @@ const OurAchievement = () => {
         <div className="grid grid-cols-1 gap-8">
           {achievements.map((achievement, index) => (
             <img
-              key={achievement._id}
+              key={index}
               src={achievement.image}
               alt={achievement.name}
               className="cursor-pointer border bg-white h-full object-scale-down p-2"

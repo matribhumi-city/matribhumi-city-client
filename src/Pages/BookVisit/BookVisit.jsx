@@ -17,7 +17,7 @@ const BookVisit = () => {
 	} = useForm();
 
 	const onSubmit = (data) => {
-		console.log(data);
+		// console.log(data);
 
 		fetch(`${apiUrl}/visits`, {
 			method: 'POST',

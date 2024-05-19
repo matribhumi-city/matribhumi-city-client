@@ -24,7 +24,7 @@ const ForgetPassword = () => {
 	} = useForm();
 	const onSubmit = async (password) => {
 		setMessage('');
-		console.log(password)
+		// console.log(password)
 		if (password.password !== password.confirmPassword) {
 			setColor('red');
 			setMessage('confirm Password does not match');
@@ -40,7 +40,7 @@ const ForgetPassword = () => {
 				body: JSON.stringify(password),
 			});
 			const data = await res.json();
-			console.log(data);
+			// console.log(data);
 			if (!res.ok) {
 				setColor('red');
 				setMessage(data.message);

@@ -166,10 +166,9 @@ const DrawerAppBar = ({ window }) => {
                             </Typography>
                             {/* Desktop navigation */}
                             <Box sx={{ flexGrow: 0, display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex', xl: 'flex' }, justifyContent: 'center', alignItems: 'center' }}>
-                                {navItems.map((item) => (
-                                    <div key={item.label} style={{ display: 'inline-block', position: 'relative', margin: '0 15px' }}>
+                                {navItems.map((item, index) => (
+                                    <div key={index} style={{ display: 'inline-block', position: 'relative', margin: '0 15px' }}>
                                         <Button
-                                            key={item.label}
                                             component={RouterLink}
                                             to={item.link}
                                             sx={{ color: '#fff', textTransform: 'capitalize' }}
@@ -258,9 +257,9 @@ const DrawerAppBar = ({ window }) => {
                     >
                         <Box p={2}>
                             <List>
-                                {navItems.map((item) => (
-                                    <React.Fragment key={item.label}>
-                                        <ListItem key={item.label} disablePadding>
+                                {navItems.map((item, index) => (
+                                    <React.Fragment key={index}>
+                                        <ListItem disablePadding>
                                             {item.dropdownItems ? (
                                                 <Accordion
                                                     sx={{

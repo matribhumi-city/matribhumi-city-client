@@ -3,7 +3,7 @@ import { apiUrl } from './constant';
 const createPropery = (formData, setLoading, toast, selectedImages) => {
 	const create = async () => {
 		try {
-			console.log(formData)
+			// console.log(formData)
 			const res = await fetch(`${apiUrl}/properties`, {
 				method: 'POST',
 				// headers: {
@@ -19,7 +19,7 @@ const createPropery = (formData, setLoading, toast, selectedImages) => {
 
 				selectedImages([]);
 			}
-			console.log(data);
+			// console.log(data);
 		} catch (error) {
 			console.log(error);
 		} finally {

@@ -39,7 +39,7 @@ const LocateArea = () => {
     return (
         <div data-aos="fade" data-aos-duration="2000" className='container mx-auto'>
             <div className='w-9/12 mx-auto text-center'>
-                <h1 className='text-4xl font-bold text-[#134391]'>Strategic Location Highlights</h1>
+                <h2 className='text-4xl font-bold text-[#134391]'>Strategic Location Highlights</h2>
                 <hr className='my-3' />
                 <p className='mb-20 text-center'>Proximity to key hubs - Roshunia Union, Nimtala bus stand, Padma Bridge, Bangabandhu International Airport, Dhaka-Mawa-Banga Expressway, and Nimtala Railway Station - offers unmatched advantages for business, defense, and geopolitical influence.</p>
             </div>
@@ -50,7 +50,7 @@ const LocateArea = () => {
                             <div className='hoverItem  relative cursor-pointer locateHoverItem'>
                                 <img src={step.image} className='w-full h-[400px] object-cover rounded-md border-3' alt="Matribhumi City" />
                                 <div className='absolute bottom-0 bg-[#134391] min-w-full bg-opacity-90 py-5 text-white rounded-b-md hoverEffect'>
-                                    <h3 className='font-semibold text-lg text-center'>{step.title}</h3>
+                                    <h2 className='font-semibold text-lg text-center'>{step.title}</h2>
                                     <p className='text-sm mt-3 text-justify px-8 hoverContent animate__animated animate__fadeInUp'>{step.content && step.content.length > 200 ? `${step.content.substring(0, 200)}...` : step.content}</p>
                                 </div>
                             </div>

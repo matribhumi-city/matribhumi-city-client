@@ -29,13 +29,13 @@ const Login = () => {
 			const resData = await res.json();
 
 			if (!res.ok) {
-				console.log(resData);
+				// console.log(resData);
 				setMessage(resData?.message);
 			}
 
 			if (resData?.success) {
 				dispatch(addUser(resData?.data?.user));
-				console.log(resData?.success?.user)
+				// console.log(resData?.success?.user)
 				navigate('/admin', { replace: true });
 				notifySuccess();
 			}
